@@ -202,6 +202,6 @@ function mostrarInformacionPorCP() {
 
 
 window.onload = function() {
-    console.log("HOla")
     mostrarInformacionPorCP();
+    
 };

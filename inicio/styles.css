@@ -64,3 +64,47 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.modal {
+    display: none;
+    /* Por defecto, el modal no se muestra */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Asegura que el modal esté sobre el backdrop */
+    overflow: hidden;
+}
+
+
+/* Estilo para el backdrop */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro */
+    z-index: 0;
+    /* Está detrás del modal */
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal-content {
+    position: absolute;
+    top: 41%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.modal img {
+    width: 147%;
+    height: auto;
+}

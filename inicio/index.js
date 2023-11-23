@@ -43,3 +43,11 @@ function redirigirAPaginaConInfo(codigoPostal) {
     // Redirige a la nueva página
     window.location.href = nuevaPaginaURL;
 }
+
+function openModal() {
+    document.querySelector(".modal").classList.add("show");
+}
+
+function closeModal() {
+    document.querySelector(".modal").classList.remove("show");
+}
