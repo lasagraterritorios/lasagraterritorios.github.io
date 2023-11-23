@@ -183,7 +183,7 @@ function mostrarInformacionPorCP() {
                 <tr>
                             <td>${empresa.nombre}</td>
                             <td>${empresa.direccion}</td>
-                            <td><a href="${empresa.googleMaps}" target="_blank"><i class="fa-solid fa-location-dot" style="color:black;"></i></a></p></td>
+                            <td><a href="${empresa.googleMaps}" target="_blank"><i class="fa-solid fa-map-location" style="color:black;"></i></a></td>
                         </tr>
                 `).join('')}
         `;
@@ -206,5 +206,8 @@ function mostrarInformacionPorCP() {
 
 window.onload = function() {
     mostrarInformacionPorCP();
-    
+    var frame = document.querySelector("iframe");
+    console.log(frame)
+    var html2 = document.querySelector("html.no-js");
+    console.log(html2)
 };

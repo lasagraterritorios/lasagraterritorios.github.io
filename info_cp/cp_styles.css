@@ -111,3 +111,67 @@ iframe .card {
 html.no-js {
     overflow: hidden;
 }
+
+tbody#tablaDeEmpresas {
+    text-align: left;
+}
+
+tbody#tablaDeEmpresas td:has(a) {
+    text-align: center;
+}
+
+div#addEmpresa,
+.reportEmpresa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+div#addEmpresa {
+    background-color: #c2e7c2;
+    /* Color de fondo pastel verde */
+    border: 1px solid #8bcf8b;
+    /* Borde en un tono más oscuro */
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.reportEmpresa {
+    background-color: #ffd3d3;
+    /* Color de fondo pastel */
+    border: 1px solid #ff9999;
+    /* Borde en un tono más oscuro */
+    padding: 5px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+div#addEmpresa p,
+.reportEmpresa p {
+    max-width: 250px;
+    text-align: left;
+}
+
+div#addEmpresa a,
+.reportEmpresa a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+div#addEmpresa a {
+    color: #0ca700;
+}
+
+.reportEmpresa a {
+    color: red;
+}
