@@ -169,8 +169,11 @@ function mostrarInformacionPorCP() {
         const infoCP = informacionPorCP[codigoPostal];
 
         const enlace = `
-            <p>Accede a traves de Alba <a href="${infoCP.paginaWeb}" target="_blank">Aqui</a></p>
-            <p>Accede a través de Google Maps <a href="https://maps.google.com/?q=${codigoPostal}" target="_blank">Aqui</a></p> `;
+            <iframe src="${infoCP.paginaWeb}" frameborder="0" width="100%" height="400px"></iframe>
+            <div class="territory-buttons">
+            <a href="${infoCP.paginaWeb}" target="_blank"><i class="fa-regular fa-eye"></i> Ver territorio</a>
+            <a href="https://maps.google.com/?q=${codigoPostal}" target="_blank"><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a>
+            </div> `;
 
         console.log(enlace);
         infoSection.innerHTML = enlace;
@@ -180,7 +183,7 @@ function mostrarInformacionPorCP() {
                 <tr>
                             <td>${empresa.nombre}</td>
                             <td>${empresa.direccion}</td>
-                            <td><a href="${empresa.googleMaps}" target="_blank">Mapa</a></p></td>
+                            <td><a href="${empresa.googleMaps}" target="_blank"><i class="fa-solid fa-location-dot" style="color:black;"></i></a></p></td>
                         </tr>
                 `).join('')}
         `;

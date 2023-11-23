@@ -36,9 +36,23 @@ section {
     z-index: 1;
     background: #FFFFFF;
     max-width: 550px;
-    padding: 45px;
+    padding: 10px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.territory-buttons a {
+    text-decoration: none;
+    width: fit-content;
+    background: #0ca700;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+}
+
+.territory-buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -83,4 +97,12 @@ section {
     background-color: #dff0d8;
     border-color: #d6e9c6;
     margin: 0;
+}
+
+iframe .card {
+    display: none;
+}
+
+iframe {
+    overflow-x: hidden;
 }

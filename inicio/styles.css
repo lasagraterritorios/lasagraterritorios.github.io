@@ -12,6 +12,17 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .login-page {
+        padding: 0;
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    footer {
+        height: max-content;
+    }
+}
+
 .title-form {
     margin-top: -50%;
     margin-bottom: 19%;
