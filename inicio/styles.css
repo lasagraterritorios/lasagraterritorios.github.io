@@ -12,6 +12,20 @@
     }
 }
 
+.title-form {
+    margin-top: -50%;
+    margin-bottom: 19%;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
 .form {
     position: relative;
     z-index: 1;
@@ -55,7 +69,12 @@
     background: #43A047;
 }
 
+.form p i {
+    color: #43A047;
+}
+
 body {
+    margin: 0;
     background: #76b852;
     /* fallback for old browsers */
     background: rgb(141, 194, 111);

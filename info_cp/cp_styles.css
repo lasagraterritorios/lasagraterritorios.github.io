@@ -26,6 +26,10 @@ h1 {
     /* Añade margen superior para compensar la altura de la imagen */
 }
 
+.header-info i {
+    float: left;
+}
+
 section {
     margin: 20px auto;
     position: relative;
