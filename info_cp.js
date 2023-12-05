@@ -65,15 +65,7 @@ function mostrarInformacionPorCP() {
             console.log(false)
         }
     });
-}
-
-
-
-
-function mostrarInformacionPorCP() {
-    
-}
-
+};
 
 
 window.onload = function() {
