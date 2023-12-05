@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -11,29 +11,38 @@
 </head>
 
 <body onload="mostrarInformacionPorCP()">
+    <script src="/language.js"></script>
 
     <header>
         <img src="/predicacion.jpg" alt="Imagen de encabezado">
         <div class="header-info">
-            <h1><a href="/inicio/index.html"><i class="fa-solid fa-left-long" style="color: #000000;"></i></a>Territorio <span id="codigoPostal"></span></h1>
+            <h1><a href="/inicio/index.html"><i class="fa-solid fa-left-long" style="color: #000000;"></i></a><span data-translate-key="territory_main_title"></span><span id="codigoPostal"></span>
+            </h1>
+            <div class="language-dropdown">
+                <i class="fa-solid fa-language"></i>
+                <select id="language-select">
+                <option value="pt">Português</option>
+                <option value="es">Español</option>
+            </select>
+            </div>
         </div>
     </header>
 
     <section class="map-section">
-        <h2>Enlace a territorio</h2>
+        <h2 data-translate-key="territory_link_title"></h2>
         <div id="infoSection"></div>
     </section>
     <section>
-        <h2>Listado de empresas</h2>
+        <h2 data-translate-key="territory_companies_title"></h2>
         <div id="empresasSection"></div>
         <div class="col-md-6">
             <div class="panel panel-primary">
                 <table class="table table-hover" id="dev-table">
                     <thead>
                         <tr>
-                            <th>Nombre</th>
-                            <th>Direccion</th>
-                            <th>Mapa</th>
+                            <th data-translate-key="territory_companies_table_name"></th>
+                            <th data-translate-key="territory_companies_table_address"></th>
+                            <th data-translate-key="territory_companies_table_map"></th>
                         </tr>
                     </thead>
                     <tbody id="tablaDeEmpresas">
@@ -44,18 +53,18 @@
         </div>
     </section>
     <section>
-        <h2>Añadir/Reportar empresa</h2>
+        <h2 data-translate-key="territory_form_title"></h2>
         <div id="addEmpresa">
-            <p>Rellena un pequeño formulario para dar de alta una empresa </p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTueJk-kKbXNs-s66uTpns867fcLfSKkYUlOcXAYuU2ERgIQ/viewform?usp=sf_link" target="_blank"><i class="fa-solid fa-right-long"></i></a>
+            <p data-translate-key="territory_form_add_company"></p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTueJk-kKbXNs-s66uTpns867fcLfSKkYUlOcXAYuU2ERgIQ/viewform?usp=sf_link" target="_blank"><i class="fa-solid fa-right-long"></i></a>
         </div>
         <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTueJk-kKbXNs-s66uTpns867fcLfSKkYUlOcXAYuU2ERgIQ/viewform?embedded=true" width="640" height="1013" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe> -->
         <div class="reportEmpresa">
-            <p>Informa algún error sobre alguna empresa</p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2OZK26E596YP_qMBu3nLAiisLHjHjkhqbUYLx-biX8CwXjQ/viewform?usp=sf_link" target="_blank"><i class="fa-solid fa-right-long"></i></a>
+            <p data-translate-key="territory_form_report_company"></p> <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2OZK26E596YP_qMBu3nLAiisLHjHjkhqbUYLx-biX8CwXjQ/viewform?usp=sf_link" target="_blank"><i class="fa-solid fa-right-long"></i></a>
         </div>
 
     </section>
     <footer>
-        <p>Actualizado por última vez 23/11/2023</p>
+        <p><span data-translate-key="territory_last_updated"></span>23/11/2023</p>
         <p><i class="fa-regular fa-copyright"></i> La Sagra Portuguesa</p>
     </footer>
     <script src="info_cp.js"></script>

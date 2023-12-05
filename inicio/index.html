@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,10 @@
 
 <body>
     <script src="index.js"></script>
+    <script src="/language.js"></script>
     <div class="login-page">
         <div class="title-form">
-            <p>Buscador de territorios La Sagra Portuguesa</p>
+            <p data-translate-key="main_title"></p>
         </div>
         <div class="form">
             <div class="modal">
@@ -24,11 +25,18 @@
                 </div>
             </div>
             <form class="login-form">
-                <p>Introduce el código postal de tu territorio</p>
+                <div class="language-dropdown">
+                    <i class="fa-solid fa-language"></i>
+                    <select id="language-select">
+                        <option value="pt">Português</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <p data-translate-key="init_search_title"></p>
                 <input type="numberic" placeholder="Codigo Postal" id="codigoPostalInput" oninput="validarNumero(this);" />
-                <button onclick="validarCodigoPostal()">Buscar</button>
-                <p id="mensajeError" style="color: red; display: none;">Error: Código postal no encontrado.</p>
-                <p>¿Dónde encontrar el código postal de mi territorio? <a href="javascript:void(0);" id="openModal" onclick="openModal()"><i class="fa-solid fa-circle-info fa-beat"></i></a></p>
+                <button onclick="validarCodigoPostal()" data-translate-key="init_search">Buscar</button>
+                <p id="mensajeError" style="color: red; display: none;" data-translate-key="init_search_error"></p>
+                <p><span data-translate-key="init_search_question"></span><a href="javascript:void(0);" id="openModal" onclick="openModal()"><i class="fa-solid fa-circle-info fa-beat"></i></a></p>
             </form>
         </div>
     </div>

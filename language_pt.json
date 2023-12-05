@@ -1,0 +1,20 @@
+{
+    "main_title": "Localizador de territórios La Sagra Portuguesa",
+    "init_search_title": "Digite o código postal do seu território",
+    "init_search_postal_code": "Código Postal",
+    "init_search": "Buscar",
+    "init_search_error": "Erro: Código postal não encontrado.",
+    "init_search_question": "Onde posso encontrar o código postal do meu território? ",
+    "territory_main_title": "Território ",
+    "territory_link_title": "Link para território",
+    "territory_alba_link": " Ver território",
+    "territory_googlemaps_link": " Como chegar",
+    "territory_companies_title": "Lista de empresas",
+    "territory_companies_table_name": "Nome",
+    "territory_companies_table_address": "Endereço",
+    "territory_companies_table_map": "Mapa",
+    "territory_form_title": "Adicionar/Reportar empresa",
+    "territory_form_add_company": "Preencha um pequeno formulário para cadastrar uma empresa",
+    "territory_form_report_company": "Informe algum erro sobre alguma empresa",
+    "territory_last_updated": "Atualizado pela última vez "
+}

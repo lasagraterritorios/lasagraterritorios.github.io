@@ -171,8 +171,8 @@ function mostrarInformacionPorCP() {
         const enlace = `
             <iframe src="${infoCP.paginaWeb}" frameborder="0" width="100%" height="400px"></iframe>
             <div class="territory-buttons">
-            <a href="${infoCP.paginaWeb}" target="_blank"><i class="fa-regular fa-eye"></i> Ver territorio</a>
-            <a href="https://maps.google.com/?q=${codigoPostal}" target="_blank"><i class="fa-solid fa-diamond-turn-right"></i> Cómo llegar</a>
+            <a href="${infoCP.paginaWeb}" target="_blank"><i class="fa-regular fa-eye"></i><span data-translate-key="territory_alba_link"></span></a>
+            <a href="https://maps.google.com/?q=${codigoPostal}" target="_blank"><i class="fa-solid fa-diamond-turn-right"></i> <span data-translate-key="territory_googlemaps_link"></span></a>
             </div> `;
 
         console.log(enlace);
