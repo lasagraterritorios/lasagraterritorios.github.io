@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     let currentLanguage = document.documentElement.getAttribute('lang');
     setLanguage(currentLanguage);
 

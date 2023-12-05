@@ -56,9 +56,9 @@ function mostrarInformacionPorCP() {
 }
 
 window.onload = function () {
+    
     mostrarInformacionPorCP();
-    var frame = document.querySelector("iframe");
-    console.log(frame)
-    var html2 = document.querySelector("html.no-js");
-    console.log(html2)
+
+    let currentLanguage = document.documentElement.getAttribute('lang');
+    setLanguage(currentLanguage);
 };
