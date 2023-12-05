@@ -38,7 +38,7 @@ function validarCodigoPostal() {
 
 function redirigirAPaginaConInfo(codigoPostal) {
     // Construye la URL de la página con la información del código postal
-    const nuevaPaginaURL = "/info_cp/info_cp.html?cp=" + codigoPostal;
+    const nuevaPaginaURL = "/info_cp.html?cp=" + codigoPostal;
 
     // Redirige a la nueva página
     window.location.href = nuevaPaginaURL;
