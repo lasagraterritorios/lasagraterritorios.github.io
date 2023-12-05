@@ -24,6 +24,7 @@ function mostrarInformacionPorCP() {
     fetch('territories.json') // Reemplaza 'ruta/al/archivo.json' con la ruta correcta de tu archivo JSON
         .then(response => response.json())
         .then(data => {
+
                 if (data.hasOwnProperty(codigoPostal)) {
                     const infoCP = data[codigoPostal];
 
