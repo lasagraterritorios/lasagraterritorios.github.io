@@ -64,3 +64,130 @@ select#language-select {
         transform: rotate(360deg);
     }
 }
+
+.loader-82 {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+    background: radial-gradient(ellipse at center, #76b852 0%, #76b852 14%, #FFF 15%, #FFF 100%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid #76b852;
+}
+
+.loader-82::after,
+.loader-82::before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 4px;
+    background: #76b852;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: 25% 0;
+    -webkit-animation: rotation 10s linear infinite;
+    animation: rotation 10s linear infinite;
+}
+
+.loader-82::before {
+    height: 22px;
+    width: 2px;
+    transform: translateX(-50%) rotate(0deg);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-95 {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.loader-95::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: 10px;
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 50% 0;
+    border: 8px solid #76b852;
+    transform: rotate(45deg) translate(0, 0);
+    -webkit-animation: animMarker 0.4s ease-in-out infinite alternate;
+    animation: animMarker 0.4s ease-in-out infinite alternate;
+}
+
+.loader-95::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 135%;
+    width: 24px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-animation: animShadow 0.4s ease-in-out infinite alternate;
+    animation: animShadow 0.4s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes animMarker {
+    0% {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    100% {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+
+@keyframes animMarker {
+    0% {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    100% {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+
+@-webkit-keyframes animShadow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes animShadow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
