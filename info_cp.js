@@ -15,6 +15,7 @@ const codigoPostal = obtenerCodigoPostalDeURL();
 
 // Establece el título de la página con el código postal
 document.title = "Info de " + codigoPostal;
+document.getElementById("codigoPostal").innerText = codigoPostal;
 
 const infoSection = document.getElementById("infoSection");
 const empresasSection = document.getElementById("tablaDeEmpresas");
@@ -56,7 +57,7 @@ function mostrarInformacionPorCP() {
 }
 
 window.onload = function () {
-    
+
     mostrarInformacionPorCP();
 
     let currentLanguage = document.documentElement.getAttribute('lang');
