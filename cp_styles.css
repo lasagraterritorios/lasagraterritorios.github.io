@@ -120,6 +120,16 @@ tbody#tablaDeEmpresas td:has(a) {
     text-align: center;
 }
 
+#tablaDeEmpresas tr:nth-child(even) {
+    background-color: #dff0d859;
+    /* Color de fondo para filas pares */
+}
+
+#tablaDeEmpresas tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* Color de fondo para filas impares */
+}
+
 div#addEmpresa,
 .reportEmpresa {
     display: flex;
