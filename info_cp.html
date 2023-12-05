@@ -11,8 +11,13 @@
 </head>
 
 <body onload="mostrarInformacionPorCP()">
-    <script src="language.js"></script>
 
+    <div class="modal" id="loadingModal">
+        <div class="modal-content">
+            <div class="loader"></div>
+            <p>Cargando...</p>
+        </div>
+    </div>
     <header>
         <img src="predicacion.jpg" alt="Imagen de encabezado">
         <div class="header-info">
@@ -68,6 +73,8 @@
         <p><i class="fa-regular fa-copyright"></i> La Sagra Portuguesa</p>
     </footer>
     <script src="info_cp.js"></script>
+    <script src="language.js"></script>
+    <script src="common_script.js"></script>
 </body>
 
 </html>

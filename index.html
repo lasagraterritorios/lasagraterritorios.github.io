@@ -13,12 +13,19 @@
 <body>
     <script src="index.js"></script>
     <script src="language.js"></script>
+    <script src="common_script.js"></script>
     <div class="login-page">
+        <div class="modal" id="loadingModal">
+            <div class="modal-content">
+                <div class="loader"></div>
+                <p>Cargando...</p>
+            </div>
+        </div>
         <div class="title-form">
             <p data-translate-key="main_title"></p>
         </div>
         <div class="form">
-            <div class="modal">
+            <div class="modal" id="imgModal">
                 <div class="modal-backdrop" onclick="closeModal()"></div>
                 <div class="modal-content">
                     <img src="terrirotio_ejemplo.jpg" width="44" height="38" />

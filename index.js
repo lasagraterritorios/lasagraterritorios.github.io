@@ -45,9 +45,9 @@ function redirigirAPaginaConInfo(codigoPostal) {
 }
 
 function openModal() {
-    document.querySelector(".modal").classList.add("show");
+    document.querySelector("#imgModal").classList.add("show");
 }
 
 function closeModal() {
-    document.querySelector(".modal").classList.remove("show");
+    document.querySelector("#imgModal").classList.remove("show");
 }
