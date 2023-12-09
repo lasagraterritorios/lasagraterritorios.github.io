@@ -13,6 +13,7 @@
     "territory_companies_table_name": "Nombre",
     "territory_companies_table_address": "Dirección",
     "territory_companies_table_map": "Mapa",
+    "territory_companies_empty": "No hay empresas asignadas a este territorio",
     "territory_form_title": "Añadir/Reportar empresa",
     "territory_form_add_company": "Rellena un pequeño fomulario para dar de alta una empresa",
     "territory_form_report_company": "Informa algún error sobre alguna empresa",

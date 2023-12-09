@@ -50,7 +50,7 @@ function mostrarInformacionPorCP() {
                     empresasSection.innerHTML = empresas;
                 } else {
                     empresasSection.closest(".col-md-6").style.display = "none";
-                    empresasSection.closest("section").querySelector("#empresasSection").innerText = "No hay empresas asignadas a este territorio";
+                    empresasSection.closest("section").querySelector("#empresasSection").innerHTML = '<span data-translate-key="territory_companies_empty"></span>';
                 }
             }
         })
