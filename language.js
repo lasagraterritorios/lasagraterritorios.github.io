@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(currentLanguage);
         setLanguage(currentLanguage);
     });
+    mostrarInformacionPorCP();
 
 });
 
