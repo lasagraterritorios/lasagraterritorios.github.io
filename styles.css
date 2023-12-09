@@ -1,26 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .login-page {
     width: 360px;
-    padding: 8% 0 0 0;
-    margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-    .login-page {
-        padding: 0;
-        margin: 50% auto;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .login-page {
-        padding: 0;
-        margin-top: 15%;
-        margin-bottom: 5%;
-    }
-    footer {
-        height: max-content;
-    }
+    margin: 50% auto;
 }
 
 .title-form {
