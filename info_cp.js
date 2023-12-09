@@ -58,7 +58,7 @@ function mostrarInformacionPorCP() {
 }
 
 window.onload = function () {
-
+    
     mostrarInformacionPorCP();
 
     let currentLanguage = document.documentElement.getAttribute('lang');

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("IDIOMA")
 
     let currentLanguage = document.documentElement.getAttribute('lang');
     setLanguage(currentLanguage);
@@ -9,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(currentLanguage);
         setLanguage(currentLanguage);
     });
-    mostrarInformacionPorCP();
 
 });
 
