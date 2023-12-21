@@ -49,3 +49,13 @@ function openModal() {
 function closeModal() {
     document.querySelector("#imgModal").classList.remove("show");
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var datalist = document.getElementById("opciones");
+
+    codigosPostales.forEach(function(opcion) {
+        var option = document.createElement("option");
+        option.value = opcion;
+        datalist.appendChild(option);
+    });
+});

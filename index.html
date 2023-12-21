@@ -42,7 +42,9 @@
                     </select>
                 </div>
                 <p data-translate-key="init_search_title"></p>
-                <input type="numberic" placeholder="Codigo Postal" id="codigoPostalInput" oninput="validarNumero(this);" />
+                <input list="opciones" placeholder="Codigo Postal" id="codigoPostalInput" oninput="validarNumero(this);" />
+                <datalist id="opciones">
+                </datalist>
                 <button onclick="validarCodigoPostal()" data-translate-key="init_search">Buscar</button>
                 <p id="mensajeError" style="color: red; display: none;" data-translate-key="init_search_error"></p>
                 <p><span data-translate-key="init_search_question"></span><a href="javascript:void(0);" id="openModal" onclick="openModal()"><i class="fa-solid fa-circle-info fa-beat"></i></a></p>
